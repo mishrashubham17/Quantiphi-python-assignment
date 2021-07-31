@@ -175,7 +175,7 @@ print(func(4,3))'''
     print("Deleted country_code property")
     del self.country_code'''
 #Q2
-import math
+'''import math
 
 class Shape:
     def __init__(self, color='black', filled=False):
@@ -241,7 +241,7 @@ print("\nArea of circle c1:", format(c1.get_area(), "0.2f"))
 print("Perimeter of circle c1:", format(c1.get_perimeter(), "0.2f"))
 print("Color of circle c1:", c1.get_color())
 
-
+'''
 
 #Exceptions
 #Q1
@@ -309,6 +309,11 @@ class NameException(Exception,p1):
     except:
         print("Invalid Name")'''
 #Regex 
+import re 
+if re.search('(Jan(uary)?|Feb(ruary)?|Mar(ch)?|Apr(il)?|May|Jun(e)?|Jul(y)?|Aug(ust)?|Sep(tember)?|Oct(ober)?|Nov(ember)?|Dec(ember)?)\s+\d{1,2},\s+\d{4}',"28 June 2021"):
+    print("True")
+else:
+    print("False")
 #Q1
 '''import re
 date="June 03,2007"
@@ -320,7 +325,7 @@ else:
     print("false")
 '''
 #Decorator
-import timeit
+'''import timeit
 
 def timer(function):
   def new_function():
@@ -335,7 +340,7 @@ def addition():
   total = 0
   for i in range(0,1000000):
     total += i
-  return total
+  return total'''
 
 #Modules
 #Q1
@@ -388,7 +393,7 @@ print(f.read())
 
 '''
 #Q2
-import csv
+'''import csv
 filename = "addresses.csv"
 fields = []
 rows = []
@@ -413,4 +418,4 @@ with open(filename, 'w') as csvfile:
 for row in rows[:5]:
     for col in row:
         print("%10s"%col),
-    print('\n')
+    print('\n')'''
